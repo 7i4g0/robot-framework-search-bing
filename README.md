@@ -4,7 +4,7 @@ Lang: [EN](#description-en) - [PT-BR](#descrição-pt-br)
 
 ### Description {en}
 
-You can use the "SeleniumLibrary" for browser automation. Make sure the SeleniumLibrary is installed, and you have the Microsoft Edge driver configured.
+You can use the "SeleniumLibrary" for browser automation. Make sure the [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/) is installed, and you have the [Microsoft Edge driver](https://developer.microsoft.com/pt-br/microsoft-edge/tools/webdriver/) configured.
 Requirements
 
 - Python 3.x
@@ -32,7 +32,8 @@ Feel free to contribute to this project. Simply fork the repository, create a br
 
 ### License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](blob/main/LICENSE).
+
 <br/>
 <br/>
 <br/>
@@ -69,4 +70,4 @@ Sinta-se à vontade para contribuir com este projeto. Basta fazer um fork do rep
 
 ### Licença
 
-Este projeto está licenciado sob a Licença MIT.
+Este projeto está licenciado sob a [Licença MIT](blob/main/LICENSE).
