@@ -32,7 +32,7 @@ Feel free to contribute to this project. Simply fork the repository, create a br
 
 ### License
 
-This project is licensed under the [MIT License](blob/main/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 <br/>
 <br/>
@@ -70,4 +70,4 @@ Sinta-se à vontade para contribuir com este projeto. Basta fazer um fork do rep
 
 ### Licença
 
-Este projeto está licenciado sob a [Licença MIT](blob/main/LICENSE).
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
