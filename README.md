@@ -1,6 +1,6 @@
 # Robot Framework - Bing test
 
-Lang: [EN](en) - [PT-BR](pt-br)
+Lang: [EN](#description-en) - [PT-BR](#descrição-pt-br)
 
 ### Description {en}
 
