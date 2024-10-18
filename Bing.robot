@@ -3,6 +3,7 @@ Library    SeleniumLibrary
 Library    OperatingSystem
 Library    String
 Library    Process
+Library    DateTime
 
 *** Variables ***
 ${EdgeDriverPath}    D:/User/Downloads/edgedriver_win64/msedgedriver.exe
@@ -14,7 +15,7 @@ ${SleepTime}         16m
 ${i}                 0
 
 *** Test Cases ***
-# Abrir o Rewards e clicar nos cards
+# @TODO Abrir o Rewards e clicar nos cards
 #     Open Browser    ${RewardsURL}    edge    executable_path=${EdgeDriverPath}
 #     Maximize Browser Window
 #     ${element} =    Get Element    css:.nome-da-classe
@@ -35,12 +36,16 @@ Abrir o Edge e fazer buscas no Bing com palavras geradas
     @{keywords}    Split To Lines    ${file_contents}
     FOR    ${keyword}    IN    @{keywords}
       ${i}=    Evaluate    ${i} + 1
-      Log    ${i} - Buscando por: ${keyword}
+      Log To Console    \n- ${i}: Buscando por "${keyword}"
       Input Text    id=sb_form_q    ${keyword}
       Submit Form
       Wait Until Element Is Visible    id=b_results
-      Sleep    ${SleepTime}
-      Log    Aguarde por ${SleepTime} para a próxima busca
+      ${currentTime}=    Get Time
+      ${nextSearchTime}=    Add Time To Date    ${currentTime}    ${SleepTime}
       Capture Page Screenshot    bing_search_${i}.png
+      Log To Console    - Busca por "${keyword}" concluída (${currentTime}).
+      Log To Console    - Aguarde por ${SleepTime} para a próxima busca...
+      Log To Console    - Próxima busca será às ${nextSearchTime}\n
+      Sleep    ${SleepTime}
     END
     Close Browser
